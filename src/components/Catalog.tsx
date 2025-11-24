@@ -52,8 +52,8 @@ const Catalog = () => {
     <section id="catalog" className="py-20 px-4">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Каталог оборудования
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Каталог <span className="text-secondary">оборудования</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Современное профессиональное оборудование от ведущих мировых производителей
@@ -64,7 +64,7 @@ const Catalog = () => {
           {equipmentCategories.map((category, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 bg-card border-border overflow-hidden"
+              className="group hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-2 bg-card border-border overflow-hidden"
             >
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -74,8 +74,8 @@ const Catalog = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
                 <div className="absolute bottom-4 left-4">
-                  <div className="bg-primary/90 p-3 rounded-lg">
-                    <Icon name={category.icon as any} size={24} className="text-primary-foreground" />
+                  <div className="bg-secondary/90 p-3 rounded-lg">
+                    <Icon name={category.icon as any} size={24} className="text-secondary-foreground" />
                   </div>
                 </div>
               </div>
@@ -91,14 +91,14 @@ const Catalog = () => {
                 <ul className="space-y-2 mb-6">
                   {category.items.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <Icon name="Check" size={18} className="text-primary mt-0.5 flex-shrink-0" />
+                      <Icon name="Check" size={18} className="text-secondary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
                 
                 <Button 
-                  className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+                  className="w-full bg-secondary hover:bg-secondary/90"
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Узнать цены

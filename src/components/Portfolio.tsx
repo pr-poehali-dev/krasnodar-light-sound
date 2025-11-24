@@ -51,8 +51,8 @@ const Portfolio = () => {
     <section className="py-20 px-4">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Портфолио проектов
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Портфолио <span className="text-secondary">проектов</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Более 500 успешно реализованных мероприятий в Краснодаре и крае
@@ -63,7 +63,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="group overflow-hidden hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1 bg-card border-border"
+              className="group overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1 bg-card border-border"
             >
               <div className="relative h-56 overflow-hidden">
                 <img 
@@ -72,7 +72,7 @@ const Portfolio = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60" />
-                <Badge className="absolute top-4 right-4 bg-primary/90 text-primary-foreground">
+                <Badge className="absolute top-4 right-4 bg-secondary/90 text-secondary-foreground">
                   {project.type}
                 </Badge>
               </div>
@@ -87,7 +87,7 @@ const Portfolio = () => {
                     <Badge 
                       key={idx} 
                       variant="outline"
-                      className="border-primary/40 text-primary"
+                      className="border-secondary/40 text-secondary"
                     >
                       {tag}
                     </Badge>

@@ -19,8 +19,8 @@ const Hero = () => {
       </div>
 
       <div className="container relative z-10 text-center px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          Свет. Звук. Эмоции.
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          Свет. Звук. <span className="text-secondary">Эмоции.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
@@ -31,7 +31,7 @@ const Hero = () => {
           <Button 
             size="lg"
             onClick={() => scrollToSection('contact')}
-            className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-8 py-6"
+            className="bg-secondary hover:bg-secondary/90 transition-colors text-lg px-8 py-6"
           >
             <Icon name="Phone" className="mr-2" size={20} />
             Заказать консультацию
@@ -41,7 +41,7 @@ const Hero = () => {
             size="lg" 
             variant="outline"
             onClick={() => scrollToSection('catalog')}
-            className="border-primary text-foreground hover:bg-primary/10 text-lg px-8 py-6"
+            className="border-secondary text-foreground hover:bg-secondary/10 text-lg px-8 py-6"
           >
             <Icon name="Zap" className="mr-2" size={20} />
             Каталог оборудования
@@ -50,7 +50,7 @@ const Hero = () => {
 
         <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-16 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">500+</div>
+            <div className="text-4xl font-bold text-secondary mb-2">500+</div>
             <div className="text-muted-foreground">Мероприятий</div>
           </div>
           <div className="text-center">
@@ -58,14 +58,14 @@ const Hero = () => {
             <div className="text-muted-foreground">Поддержка</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">100%</div>
+            <div className="text-4xl font-bold text-secondary mb-2">100%</div>
             <div className="text-muted-foreground">Качество</div>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <Icon name="ChevronDown" size={32} className="text-primary" />
+        <Icon name="ChevronDown" size={32} className="text-secondary" />
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-lg">
+              <div className="bg-secondary p-2 rounded-lg">
                 <Icon name="Zap" size={24} className="text-white" />
               </div>
               <span className="text-xl font-bold">EventRent</span>
@@ -22,31 +22,31 @@ const Footer = () => {
             <div className="flex gap-3">
               <a 
                 href="#" 
-                className="bg-card hover:bg-primary/20 p-2 rounded-lg transition-colors"
+                className="bg-card hover:bg-secondary/20 p-2 rounded-lg transition-colors"
                 aria-label="VK"
               >
-                <Icon name="Facebook" size={20} className="text-primary" />
+                <Icon name="Facebook" size={20} className="text-secondary" />
               </a>
               <a 
                 href="#" 
-                className="bg-card hover:bg-primary/20 p-2 rounded-lg transition-colors"
+                className="bg-card hover:bg-secondary/20 p-2 rounded-lg transition-colors"
                 aria-label="Instagram"
               >
-                <Icon name="Instagram" size={20} className="text-primary" />
+                <Icon name="Instagram" size={20} className="text-secondary" />
               </a>
               <a 
                 href="https://t.me/eventrent" 
-                className="bg-card hover:bg-primary/20 p-2 rounded-lg transition-colors"
+                className="bg-card hover:bg-secondary/20 p-2 rounded-lg transition-colors"
                 aria-label="Telegram"
               >
-                <Icon name="Send" size={20} className="text-primary" />
+                <Icon name="Send" size={20} className="text-secondary" />
               </a>
               <a 
                 href="https://wa.me/79001234567" 
-                className="bg-card hover:bg-primary/20 p-2 rounded-lg transition-colors"
+                className="bg-card hover:bg-secondary/20 p-2 rounded-lg transition-colors"
                 aria-label="WhatsApp"
               >
-                <Icon name="Phone" size={20} className="text-primary" />
+                <Icon name="Phone" size={20} className="text-secondary" />
               </a>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-secondary transition-colors"
                 >
                   Световое оборудование
                 </button>
@@ -65,7 +65,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-secondary transition-colors"
                 >
                   Звуковое оборудование
                 </button>
@@ -73,7 +73,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-secondary transition-colors"
                 >
                   Спецэффекты
                 </button>
@@ -81,7 +81,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-secondary transition-colors"
                 >
                   Техническая поддержка
                 </button>
@@ -93,19 +93,19 @@ const Footer = () => {
             <h3 className="font-bold mb-4">Контакты</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-center gap-2">
-                <Icon name="Phone" size={16} className="text-primary" />
+                <Icon name="Phone" size={16} className="text-secondary" />
                 <a href="tel:+79001234567" className="hover:text-primary transition-colors">
                   +7 (900) 123-45-67
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Icon name="Mail" size={16} className="text-primary" />
+                <Icon name="Mail" size={16} className="text-secondary" />
                 <a href="mailto:info@eventrent.ru" className="hover:text-primary transition-colors">
                   info@eventrent.ru
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <Icon name="MapPin" size={16} className="text-primary mt-1" />
+                <Icon name="MapPin" size={16} className="text-secondary mt-1" />
                 <span>г. Краснодар, ул. Красная, 123</span>
               </li>
             </ul>
@@ -118,7 +118,7 @@ const Footer = () => {
           </p>
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 text-sm text-primary hover:text-secondary transition-colors"
+            className="flex items-center gap-2 text-sm text-secondary hover:text-secondary/80 transition-colors"
           >
             <Icon name="ArrowUp" size={16} />
             Наверх

@@ -35,8 +35,8 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Свяжитесь с нами
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+            Свяжитесь <span className="text-secondary">с нами</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Готовы обсудить ваше мероприятие и подобрать оптимальное решение
@@ -97,7 +97,7 @@ const Contact = () => {
                   <Button 
                     type="submit"
                     size="lg"
-                    className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90"
+                    className="w-full bg-secondary hover:bg-secondary/90"
                   >
                     <Icon name="Send" className="mr-2" size={20} />
                     Отправить заявку
@@ -108,15 +108,15 @@ const Contact = () => {
           </div>
 
           <div className="space-y-6">
-            <Card className="bg-card border-border hover:shadow-lg hover:shadow-primary/10 transition-all">
+            <Card className="bg-card border-border hover:shadow-lg hover:shadow-secondary/10 transition-all">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-primary to-secondary p-3 rounded-lg flex-shrink-0">
+                  <div className="bg-secondary p-3 rounded-lg flex-shrink-0">
                     <Icon name="Phone" size={24} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-2">Телефон</h3>
-                    <a href="tel:+79001234567" className="text-primary hover:underline text-lg">
+                    <a href="tel:+79001234567" className="text-secondary hover:underline text-lg">
                       +7 (900) 123-45-67
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">Ежедневно с 9:00 до 22:00</p>
@@ -125,15 +125,15 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border hover:shadow-lg hover:shadow-primary/10 transition-all">
+            <Card className="bg-card border-border hover:shadow-lg hover:shadow-secondary/10 transition-all">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-secondary to-primary p-3 rounded-lg flex-shrink-0">
+                  <div className="bg-secondary p-3 rounded-lg flex-shrink-0">
                     <Icon name="Mail" size={24} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-2">Email</h3>
-                    <a href="mailto:info@eventrent.ru" className="text-primary hover:underline">
+                    <a href="mailto:info@eventrent.ru" className="text-secondary hover:underline">
                       info@eventrent.ru
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">Ответим в течение часа</p>
@@ -142,10 +142,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-border hover:shadow-lg hover:shadow-primary/10 transition-all">
+            <Card className="bg-card border-border hover:shadow-lg hover:shadow-secondary/10 transition-all">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-primary to-secondary p-3 rounded-lg flex-shrink-0">
+                  <div className="bg-secondary p-3 rounded-lg flex-shrink-0">
                     <Icon name="MapPin" size={24} className="text-white" />
                   </div>
                   <div>
@@ -160,10 +160,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/30">
+            <Card className="bg-gradient-to-br from-secondary/10 to-secondary/5 border-secondary/30">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-secondary to-primary p-3 rounded-lg flex-shrink-0">
+                  <div className="bg-secondary p-3 rounded-lg flex-shrink-0">
                     <Icon name="MessageCircle" size={24} className="text-white" />
                   </div>
                   <div>
@@ -173,7 +173,7 @@ const Contact = () => {
                         href="https://wa.me/79001234567" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:text-secondary transition-colors"
+                        className="text-secondary hover:text-secondary/80 transition-colors"
                       >
                         WhatsApp
                       </a>
@@ -182,7 +182,7 @@ const Contact = () => {
                         href="https://t.me/eventrent" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:text-secondary transition-colors"
+                        className="text-secondary hover:text-secondary/80 transition-colors"
                       >
                         Telegram
                       </a>
